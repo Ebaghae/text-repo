@@ -1,0 +1,59 @@
+# This file contains info on how to create a directory, create a python virtual environment , add files  and commit changes to you main remote github account.
+
+#Step 1: Create a new github repo
+        Sign in to GitHub and create a new empty repo. You can choose to either initialize a README or not.
+        
+#Step 2: Create a project directory
+         $mkdir test-env 
+         (Note that test-env is the name of the directory you made)
+ 
+ #Step 3: Switch to the directory
+          $cd test-env
+          
+ #Step 4: Create virtual environment 
+          $python -m venv env (note that venv is virtual environment and env is the name of the virtual environment you want to create)
+          
+ #Step 5: Switch to the venv 
+          $source virtual/Scripts/activate
+          (Note: to turn off virtual environment type'deactivate')
+          
+ #Step 6: Install your python packages using 'pip install'
+          
+ #Step 7: Initialize the git repo
+          $git init   (Note: this will turn the repo you created to a git directory)
+          
+ #Step 8: Run 'echo ‘env' > .gitignore' (to include the env folder in the .gitignore file so the virtual environment is ignored in source control)
+ 
+ #Step 9: Run 'pip freeze > requirements.txt' (to place the dependencies in a text file to be committed. 
+          Freezing reads all the installed dependencies and then produces a text file with the name of the dependency and the installed version number.)
+          
+ #Step 10: Run 'git add requirements.txt' (to check the file into source control.)
+          
+ #Step 11: Install your python packages, write your codes, create your files etc.
+ 
+ #Step 12: Add the files to Git Index
+          $ git add -A
+          (Note: The git add command is used to tell git which files to include in a commit, and the -A (or --all) argument means “include all”.)
+          
+ # Step 13: Commit added files
+            $git commit -m 'write your commit message here'
+            (Note:The git commit command creates a new commit with all files that have been “added”. 
+            The -m (or --message) sets the message that will be included alongside the commit, used for future reference to understand the commit.)
+            
+ #Step 14: Add a new remote origin
+          $git remote add origin 'repo link'
+          (Note: In git, a “remote” refers to a remote version of the same repository, which is typically on a server somewhere (in this case, GitHub).
+          “origin” is the default name git gives to a remote server (you can have multiple remotes) so git remote add origin is instructing git to add the URL of the default remote server for this repo.)
+          
+#Step 15: Git Pull from remote main branch to local virtual env branch
+           $git pull --all
+           (Note: this will merge the files from the remote repo to your local repo)
+           
+#Step 16: Git Push from local branch to remote branch
+          $ git push -u origin master 
+          (The -u (or --set-upstream) flag sets the remote origin as the upstream reference. 
+          This allows you to later perform git push and git pull commands without having to specify an origin since we always want GitHub in this case.)
+          (Note: this will merge all the files in your local repo to your remote repo. Now your brances are both have d same files and are up to date)
+          (Note that you local branch name is 'master' and your remote branch name is 'main')
+          
+#Step 17: follow the instructions provided and create a pull request from the remote repo using the link provided in git terminal. ( only if instructed to do so)
