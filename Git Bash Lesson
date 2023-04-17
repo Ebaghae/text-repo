@@ -14,7 +14,7 @@
           $python -m venv env (note that venv is virtual environment and env is the name of the virtual environment you want to create)
           
  #Step 5: Switch to the venv 
-          $source virtual/Scripts/activate
+          $source env/Scripts/activate
           (Note: to turn off virtual environment type'deactivate')
           
  #Step 6: Install your python packages using 'pip install'
