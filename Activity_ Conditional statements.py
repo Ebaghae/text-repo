@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# <h1>Activity: Conditional Statements</h1>
-
-# ## Introduction 
-# 
 # In this lab, you will practice using Python operators to perform operations between two variables and write conditional statements.
 # 
 # As a data analyst, you'll use conditional statements in your approach to many different tasks using Python. Using Boolean values, conditional statements will determine how a code block is executed based on how a condition is met.
@@ -12,15 +5,6 @@
 # While continuing work for the movie theater, you're now examining marketing campaigns. Specifically, you'll be analyzing user behavior to determine when a customer's activity has prompted a marketing email.
 # 
 
-# ## Tips for completing this lab
-# 
-# As you navigate this lab, keep the following tips in mind:
-# 
-# - `### YOUR CODE HERE ###` indicates where you should write code. Be sure to replace this with your own code before running the code cell.
-# - Feel free to open the hints for additional guidance as you work on each task.
-# - To enter your answer to a question, double-click the markdown cell to edit. Be sure to replace the "[Double-click to enter your responses here.]" with your own answer.
-# - You can save your work manually by clicking File and then Save in the menu bar at the top of the notebook.
-# - You can download your work locally by clicking File and then Download and then specifying your preferred file format in the menu bar at the top of the notebook.
 
 # ## Task 1: Define a comparator function
 # 
@@ -53,29 +37,6 @@ def send_email(num_visits, visits_email):
     else:
         print('Not enough visits.')
 
-
-# <details>
-#   <summary><h4><strong>Hint 1</strong></h4></summary>
-# 
-# Consider the syntax for defining a function. Remember: a function definition statement must include a `def` keyword, the function's name, and its arguments, followed by a colon.
-# 
-# </details>
-
-# <details>
-#   <summary><h4><strong>Hint 2</strong></h4></summary>
-# 
-# Recall Python's conditional and comparison operators.
-# Check your indentation. Is your code indented properly?
-# 
-# </details>
-
-# <details>
-#   <summary><h4><strong>Hint 3</strong></h4></summary>
-# 
-# One approach is to compare `num_visits` to `visits_email` using the `>=` comparator.
-# If `num_visits >= visits_email`, print `Send email.` Otherwise, print `Not enough visits.`.
-# 
-# </details>
 
 # ### Test your function
 # Test your function against the following cases by running the cell below.
@@ -126,35 +87,6 @@ def send_email(num_visits, visits_email, visits_coupon):
         print('Not enough visits.')
 
 
-# <details>
-#   <summary><h4><strong>Hint 1</strong></h4></summary>
-# 
-# Refer to what you've learned about conditional statements, logical operators, and comparison operators.
-# 
-# </details>
-
-# <details>
-#     <summary><h4><strong>Hint 2</strong></h4></summary>
-# 
-# Make sure your `if`, `elif`, and `else` statements are indented properly beneath the function's definition line.
-# 
-# Make sure your print statements are indented properly beneath each conditional statement.
-# 
-# Check syntax.
-# 
-# </details>
-
-# <details>
-#   <summary><h4><strong>Hint 3</strong></h4></summary>
-# 
-# One approach is to compare `num_visits` to both `visits_coupon` and `visits_email` using the `>=` comparator:
-# 
-# If `num_visits >= visits_coupon`, print `Send email with coupon.`
-# Or else if `num_visits >= visits_email`, print `Send email only.`
-# Otherwise, print `Not enough visits.`
-# 
-# </details>
-
 # ### Test your function
 # Test your function against the following cases by running the cell below.
 
@@ -166,12 +98,3 @@ send_email(num_visits=5, visits_email=5, visits_coupon=8)   # Should print 'Send
 send_email(num_visits=6, visits_email=5, visits_coupon=8)   # Should print 'Send email only.'
 send_email(num_visits=8, visits_email=5, visits_coupon=8)   # Should print 'Send email with coupon.'
 send_email(num_visits=10, visits_email=5, visits_coupon=8)  # Should print 'Send email with coupon.'
-
-
-# ## Conclusion
-# 
-# **What are your key takeaways from this lab?**
-
-# [Double-click to enter your response here.]
-
-# **Congratulations!** You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.
