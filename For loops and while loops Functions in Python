@@ -1,0 +1,31 @@
+1) While loop syntax: A while loop is a control structure that allows you to repeatedly execute a block of code for as long as a certain condition is true. 
+syntax:
+x = 1
+while x < 100:
+   print(x)
+   x = x*2
+result: 1, 2, 4, 8,16, 32, 64
+
+2) For loop syntax: A for loop is a control structure that allows you to execute a block of code the same number of times as there are elements in an iterable sequence. 
+Syntax:
+num = 5
+y = [1, 2, 3]
+for num in y:
+   print(num)
+
+print(num)
+result: 1, 2, 3, 3
+
+3) range() function: The range() function is a function that takes three arguments: start, stop, step. Its output is an object belonging to the range class. 
+If you only include one argument, it will be interpreted as the stop value. The start and step values by default will be zero and one, respectively. 
+If you include two arguments, they will be interpreted as the start and stop values (again, with step being one by default).
+Note that the stop value is not included in the range that is returned.
+syntax:
+for n in range(2, 5):
+   print(n)
+result: 2, 3, 4
+
+syntax:
+for even_num in range(2, 11, 2):
+   print(even_num)
+result: 2, 4, 6, 8, 10
