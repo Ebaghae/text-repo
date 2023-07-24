@@ -1,0 +1,72 @@
+1) Indexing: refers to accessing a single element of a sequence by its position. In Python, the first element of any sequence has an index of zero. 
+This means Python uses zero-based indexing. Numerous other programming languages also use zero-based indexing, but not all of them do. 
+Some languages use one-based indexing, such as R, Julia, and Sass. 
+Use square brackets to perform indexing. Here are some examples:
+syntax:
+my_string = 'Mississippi half-step'
+print(my_string[0])
+result: M
+
+my_list = [1, 'unladen', 'swallow']
+print(my_list[1])
+result: unladen
+
+print(my_list[-1])
+result: swallow
+
+2) Slicing: refers to accessing a range of elements from a sequence. Use square brackets containing two indices separated by a colon. 
+syntax:
+new_string = 'pining for the fjords'
+print(new_string[0:3])
+result: pin
+
+3) format(): String formatting uses the format() method, which belongs to the string class. 
+This method formats and inserts specific substrings into designated places within a larger string. 
+It’s useful when you have reusable template text into which you want to insert specific changeable values, for example. 
+The format() method is also useful when assigning the strings used to label charts and graphs you make. 
+syntax:
+x = 'values'
+y = 100
+
+print('''String formatting lets you insert {} into strings.
+They can even be numbers, like {}.'''.format(x, y))
+
+result: String formatting lets you insert values into strings.
+They can even be numbers, like 100.
+
+var_a = 'A'
+var_b = 'B'
+print('{a}, {b}'.format(b=var_b, a=var_a))
+
+result: A, B
+
+var_a = 'A'
+var_b = 'B'
+print('{1}, {0}'.format(var_a, var_b))
+
+result: B, A
+
+4) str.join(): Return a string which is the concatenation of the strings in iterable. The separator between elements is the string providing this method.
+syntax:
+separator_string = ' '
+iterable_of_strings = ['Happy', 'birthday', 'to', 'you']
+
+separator_string.join(iterable_of_strings)
+result: Happy birthday to you
+
+5) str.partition(sep): Split the string at the first occurrence of sep , and return a 3-tuple containing the part before the separator, the separator itself,
+and the part after the separator. If the separator is not found, return a 3-tuple containing the string itself, followed by two empty strings.
+syntax:
+my_string = 'https://www.google.com/'
+
+my_string.partition('.')
+result: ('https://www', '.', 'google.com/')
+
+6) str.replace(old, new[, count]): Return a copy of the string with all occurrences of substring old replaced by new. 
+If the optional argument count is given, only the first count occurrences are replaced.
+syntax:
+my_string = 'https://www.google.com/'
+
+my_string.replace('google', 'youtube')
+result: https://www.youtube.com/
+
