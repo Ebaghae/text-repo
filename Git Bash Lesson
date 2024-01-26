@@ -57,3 +57,8 @@
           (Note that you local branch name is 'master' and your remote branch name is 'main')
           
 #Step 17: follow the instructions provided and create a pull request from the remote repo using the link provided in git terminal. ( only if instructed to do so)
+
+
+To use Jupyter notbook after installing it;
+     type 'jupyter notbook'  you will be directed to jupyter notebook.
+To exit it just press 'ctrl + c'
